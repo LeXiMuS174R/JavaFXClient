@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.game.client.controller.Controller">
+   <children>
+      <Button fx:id="connectionButton" layoutX="492.0" layoutY="20.0" mnemonicParsing="false" text="Подключение" />
+      <TextField fx:id="playerNameTextField" layoutX="435.0" layoutY="61.0" prefHeight="25.0" prefWidth="94.0" />
+      <Button fx:id="startGameButton" layoutX="539.0" layoutY="61.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" text="OK" />
+      <TextArea fx:id="serverLogsTextArea" layoutX="436.0" layoutY="100.0" prefHeight="200.0" prefWidth="148.0" />
+      <Circle fx:id="player" fill="DODGERBLUE" layoutX="200.0" layoutY="360.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="enemy" fill="#ff1f1f" layoutX="200.0" layoutY="40.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="playerHP" layoutX="397.0" layoutY="360.0" text="100" />
+      <Label fx:id="enemyHP" layoutX="397.0" layoutY="24.0" text="100" />
+   </children>
+</AnchorPane>
